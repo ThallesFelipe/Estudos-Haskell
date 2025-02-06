@@ -1,10 +1,10 @@
 {-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
+
 {-# HLINT ignore "Use foldr" #-}
 
-soma :: Num a => [a] -> a
-
+soma :: (Num a) => [a] -> a
 soma [] = 0
-soma (x:xs) = x + soma xs
+soma (x : xs) = x + soma xs
 
 {-
     soma [2,3,4]
