@@ -13,3 +13,4 @@ fooNotEven x =
 main = do
     putStrLn "Example of Haskell Function Composition"
     print (fooNotEven (fooEven 2))
+    print ((fooNotEven.fooEven) 15)
