@@ -10,5 +10,5 @@ bookCategory pages
   | otherwise = "We don't know!"
 
 main = do
-  putStrLn "The categoru=y of your book is: "
+  putStrLn "The category of your book is: "
   print (bookCategory 10000)
