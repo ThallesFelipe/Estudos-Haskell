@@ -14,10 +14,15 @@ salario salarioBase = salarioBase + (0.1 * salarioBase) - (0.07 * salarioBase)
 
 type Temperatura = Double
 
+conversorCelciusFahrenheit :: Temperatura -> Temperatura
+conversorCelciusFahrenheit tempC = (9 / 5 * tempC) + 32
+
 type Nome = String
+
 saudacao :: Nome -> String
 saudacao nome = "Hello " ++ show nome ++ "!"
 
 type Velocidade = Int
+
 aumentaVelocidade :: Double -> Double
 aumentaVelocidade v = v * 2
