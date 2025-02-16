@@ -41,3 +41,9 @@ impar' n
   | n == 0 = False
   | n > 0 = par' (n - 1)
   | otherwise = impar' (-n)
+
+fatorialTail :: Integer -> Integer
+fatorialTail n = aux n 1
+  where
+    aux 0 acc = acc -- Quando n chega a 0, o acumulador tem o resultado final
+    aux n acc = aux (n - 1) (n * acc) -- A chamada recursiva é a última operação
