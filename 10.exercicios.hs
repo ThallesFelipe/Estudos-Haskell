@@ -9,8 +9,5 @@ main = do
   putStrLn "Digite outro número:"
   num3 <- getLine
   putStr "Produto dos números digitados: "
-  let n1 = read num1 :: Double
-      n2 = read num2
-      n3 = read num3
-      produto = n1 * n2 * n3
-  print produto
+
+  print (read num1 * read num2 * read num3 :: Double)
